@@ -6,6 +6,6 @@
 //
 
 import Foundation
-class DataSource{
-    
+protocol DataSource{
+    func fetchMovies <responseData:Codable>(api:ApiUrlConstructor) async throws -> responseData
 }
