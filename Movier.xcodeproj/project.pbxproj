@@ -18,6 +18,15 @@
 		8A58AC2F2B56F65A002ABF17 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC2E2B56F65A002ABF17 /* RemoteDataSource.swift */; };
 		8A58AC322B56F6DC002ABF17 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC312B56F6DC002ABF17 /* DataSource.swift */; };
 		8A58AC372B56F98E002ABF17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC362B56F98E002ABF17 /* Constants.swift */; };
+		8A58AC3E2B571CD5002ABF17 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC3D2B571CD5002ABF17 /* EndPoint.swift */; };
+		8A58AC402B572012002ABF17 /* PListKeysManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC3F2B572012002ABF17 /* PListKeysManager.swift */; };
+		8A58AC422B572680002ABF17 /* ApiUrlConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC412B572680002ABF17 /* ApiUrlConstructor.swift */; };
+		8A58AC452B572D3E002ABF17 /* ApiUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC442B572D3E002ABF17 /* ApiUrlBuilder.swift */; };
+		8A58AC482B573F90002ABF17 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC472B573F90002ABF17 /* Movie.swift */; };
+		8A58AC4A2B5741A0002ABF17 /* OrginalLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC492B5741A0002ABF17 /* OrginalLanguage.swift */; };
+		8A58AC4C2B5741DB002ABF17 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC4B2B5741DB002ABF17 /* MovieResponse.swift */; };
+		8A6328AA2B587304000FCF9D /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6328A92B587304000FCF9D /* HomeRepository.swift */; };
+		8A6328AC2B5877C6000FCF9D /* HomeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6328AB2B5877C6000FCF9D /* HomeDataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +42,17 @@
 		8A58AC2E2B56F65A002ABF17 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		8A58AC312B56F6DC002ABF17 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		8A58AC362B56F98E002ABF17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A58AC392B571146002ABF17 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		8A58AC3A2B571A05002ABF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A58AC3D2B571CD5002ABF17 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		8A58AC3F2B572012002ABF17 /* PListKeysManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListKeysManager.swift; sourceTree = "<group>"; };
+		8A58AC412B572680002ABF17 /* ApiUrlConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlConstructor.swift; sourceTree = "<group>"; };
+		8A58AC442B572D3E002ABF17 /* ApiUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlBuilder.swift; sourceTree = "<group>"; };
+		8A58AC472B573F90002ABF17 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8A58AC492B5741A0002ABF17 /* OrginalLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrginalLanguage.swift; sourceTree = "<group>"; };
+		8A58AC4B2B5741DB002ABF17 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		8A6328A92B587304000FCF9D /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		8A6328AB2B5877C6000FCF9D /* HomeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +85,14 @@
 		8A58AC072B56E858002ABF17 /* Movier */ = {
 			isa = PBXGroup;
 			children = (
+				8A58AC382B571128002ABF17 /* KeysAndUrls */,
 				8A58AC1E2B56F284002ABF17 /* Modules */,
 				8A58AC2B2B56F394002ABF17 /* Services */,
 				8A58AC332B56F7AA002ABF17 /* Assets */,
 				8A58AC352B56F83D002ABF17 /* Utilities */,
 				8A58AC082B56E858002ABF17 /* MovierApp.swift */,
 				8A58AC132B56E859002ABF17 /* Movier.xcdatamodeld */,
+				8A58AC3A2B571A05002ABF17 /* Info.plist */,
 				8A58AC0E2B56E859002ABF17 /* Preview Content */,
 			);
 			path = Movier;
@@ -87,6 +109,7 @@
 		8A58AC1E2B56F284002ABF17 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8A58AC462B573F7C002ABF17 /* Model */,
 				8A58AC222B56F304002ABF17 /* Details */,
 				8A58AC1F2B56F2A9002ABF17 /* Home */,
 			);
@@ -96,6 +119,7 @@
 		8A58AC1F2B56F2A9002ABF17 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8A6328A82B5872CF000FCF9D /* HomeRepository */,
 				8A58AC212B56F2DB002ABF17 /* ViewModel */,
 				8A58AC202B56F2BB002ABF17 /* View */,
 			);
@@ -155,6 +179,7 @@
 		8A58AC2C2B56F3A1002ABF17 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				8A58AC3B2B571C66002ABF17 /* Builders */,
 				8A58AC2D2B56F5B4002ABF17 /* RemoteSource */,
 			);
 			path = NetworkService;
@@ -198,6 +223,52 @@
 				8A58AC362B56F98E002ABF17 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8A58AC382B571128002ABF17 /* KeysAndUrls */ = {
+			isa = PBXGroup;
+			children = (
+				8A58AC392B571146002ABF17 /* Config.xcconfig */,
+			);
+			path = KeysAndUrls;
+			sourceTree = "<group>";
+		};
+		8A58AC3B2B571C66002ABF17 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				8A58AC3C2B571C86002ABF17 /* BaseUrlBuilder */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		8A58AC3C2B571C86002ABF17 /* BaseUrlBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				8A58AC3D2B571CD5002ABF17 /* EndPoint.swift */,
+				8A58AC3F2B572012002ABF17 /* PListKeysManager.swift */,
+				8A58AC412B572680002ABF17 /* ApiUrlConstructor.swift */,
+				8A58AC442B572D3E002ABF17 /* ApiUrlBuilder.swift */,
+			);
+			path = BaseUrlBuilder;
+			sourceTree = "<group>";
+		};
+		8A58AC462B573F7C002ABF17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A58AC472B573F90002ABF17 /* Movie.swift */,
+				8A58AC492B5741A0002ABF17 /* OrginalLanguage.swift */,
+				8A58AC4B2B5741DB002ABF17 /* MovieResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A6328A82B5872CF000FCF9D /* HomeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				8A6328A92B587304000FCF9D /* HomeRepository.swift */,
+				8A6328AB2B5877C6000FCF9D /* HomeDataRepository.swift */,
+			);
+			path = HomeRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,14 +366,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A58AC482B573F90002ABF17 /* Movie.swift in Sources */,
+				8A58AC402B572012002ABF17 /* PListKeysManager.swift in Sources */,
 				8A58AC282B56F358002ABF17 /* DetailsPage.swift in Sources */,
 				8A58AC2F2B56F65A002ABF17 /* RemoteDataSource.swift in Sources */,
+				8A58AC3E2B571CD5002ABF17 /* EndPoint.swift in Sources */,
+				8A58AC452B572D3E002ABF17 /* ApiUrlBuilder.swift in Sources */,
 				8A58AC2A2B56F373002ABF17 /* HomeViewModel.swift in Sources */,
+				8A58AC422B572680002ABF17 /* ApiUrlConstructor.swift in Sources */,
+				8A6328AA2B587304000FCF9D /* HomeRepository.swift in Sources */,
 				8A58AC152B56E859002ABF17 /* Movier.xcdatamodeld in Sources */,
 				8A58AC1C2B56EEE4002ABF17 /* HomePage.swift in Sources */,
 				8A58AC092B56E858002ABF17 /* MovierApp.swift in Sources */,
+				8A58AC4A2B5741A0002ABF17 /* OrginalLanguage.swift in Sources */,
 				8A58AC322B56F6DC002ABF17 /* DataSource.swift in Sources */,
+				8A58AC4C2B5741DB002ABF17 /* MovieResponse.swift in Sources */,
 				8A58AC262B56F33D002ABF17 /* DetailsViewModel.swift in Sources */,
+				8A6328AC2B5877C6000FCF9D /* HomeDataRepository.swift in Sources */,
 				8A58AC372B56F98E002ABF17 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +392,7 @@
 /* Begin XCBuildConfiguration section */
 		8A58AC162B56E859002ABF17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A58AC392B571146002ABF17 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -375,6 +456,7 @@
 		};
 		8A58AC172B56E859002ABF17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A58AC392B571146002ABF17 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -439,6 +521,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Movier/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movier/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,6 +550,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Movier/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movier/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
