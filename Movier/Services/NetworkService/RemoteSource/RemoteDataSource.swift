@@ -6,6 +6,35 @@
 //
 
 import Foundation
-class RemoteDataSource{
+actor RemoteDataSource : DataSource {
+    static let shared = RemoteDataSource()
+    private init(){}
     
+    func fetchMovies<responseData:Codable>(api: ApiUrlConstructor) async throws -> responseData{
+        do{
+            let movieUrl =  try ApiUrlBuilder.build(api: api)
+            let (moviesData , response) = try await URLSession.shared.data(from: movieUrl)
+            guard let response = response as? HTTPURLResponse , response.statusCode == 200 else {
+                throw NetworkError.responseError
+            }
+            return try decodeData(responseData.self ,moviesData)
+            
+        }catch ApiUrlBuilderError.inavlidUrl{
+            throw ApiUrlBuilderError.inavlidUrl
+        }catch NetworkError.invalideModel{
+            throw NetworkError.invalideModel
+        }
+        
+    }
+    private func decodeData <T:Decodable>(_ dataModel : T.Type , _ moviesData:Data) throws -> T{
+        do{
+            return try JSONDecoder().decode(T.self,from: moviesData)
+        }catch{
+            throw NetworkError.invalideModel
+        }
+    }
+}
+enum NetworkError:Error{
+    case responseError
+    case invalideModel
 }

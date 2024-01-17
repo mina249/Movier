@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct HomePage: View {
+    
+    @StateObject var vm = HomeViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        NavigationView {
+            List(vm.movies) { movis in
+                       // Each row in the list
+                Text(movis.title)
+            }.task {
+                await vm.getMovies(endPoint: .topRated, page: 2)
+                   }
+                   .navigationTitle("Sample List")
+        }
+           }
+    
 }
 
 #Preview {

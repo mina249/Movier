@@ -1,0 +1,14 @@
+//
+//  Config.xcconfig
+//  Movier
+//
+//  Created by Min Nageh on 16/01/2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY = 79c07e2821160443504fabd00be59ed2
+API_BASE_URL= https://api.themoviedb.org/3/movie/
+IMAGE_BASE_URL = http://image.tmdb.org/t/p/
+
