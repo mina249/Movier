@@ -6,7 +6,16 @@
 //
 
 import Foundation
-enum EndPoint : String{
+enum EndPoint : String,CaseIterable{
     case popular = "popular"
     case topRated = "top_rated"
+    
+    var sortingName:String{
+        switch self {
+        case .popular:
+            "Popular"
+        case .topRated:
+            "Top Rated"
+        }
+    }
 }

@@ -8,18 +8,48 @@
 import Foundation
 class HomeViewModel:ObservableObject{
     @Published var movies : [Movie] = []
+    @Published var selectedSortType = EndPoint.popular
+    @Published var hasError = false
+    @Published var networkError :NetworkErrors?
+    var pageNumber:Int32 = 0
     let homeRepository = HomeDataRepository(remoteDataSource: RemoteDataSource.shared)
-   
-    func getMovies(endPoint:EndPoint,page:Int32) async {
-        let api = ApiUrlConstructor(endPoint: endPoint, params: ["page":String(page)])
-        do{
-            let moveiesResponse:MovieResponse = try await homeRepository.getHomeMovies(api: api)
-            await MainActor.run{
-                movies = moveiesResponse.movies
+   @MainActor
+    func getMovies(endPoint:EndPoint,forPage pageNumber:Int32) async {
+            let api = ApiUrlConstructor(endPoint: selectedSortType, params: ["page":String(pageNumber)])
+            do{
+                let moveiesResponse:MovieResponse = try await homeRepository.getHomeMovies(api: api)
+                    movies.append(contentsOf: moveiesResponse.movies)
+            }catch let error{
+                hasError = true
+                networkError = error as? NetworkErrors
             }
-        }catch let error{
-            print(error.localizedDescription)
+    }
+    
+    func updateMoviesListWithNextPage(){
+        pageNumber += 1
+        Task{
+           await getMovies(endPoint: selectedSortType, forPage: pageNumber)
         }
     }
     
+    func getMoviePosterUrl(imageSize:ImageSize , _ posterUrl:String) -> URL{
+        let urlConstructor = ImageUrlConstructor(size: imageSize, path: posterUrl)
+        do{
+            let url =  try ImageUrlBuilder.build(urlConstructor)
+            return url
+        }catch let error{
+           hasError = true
+           networkError = error as? NetworkErrors
+            
+        }
+        return URL(string: "")!
+    }
+    
+    func resetMoviesList(){
+        pageNumber = 0
+        movies = []
+    }
+    func isLastMovie(_ movie:Movie)->Bool{
+        movie.id == movies.last?.id
+    }
 }

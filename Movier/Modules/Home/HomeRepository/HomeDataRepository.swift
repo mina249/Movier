@@ -15,12 +15,12 @@ class HomeDataRepository:HomeRepository{
     func getHomeMovies<T:Codable>(api: ApiUrlConstructor) async throws -> T {
         do{
             return try await remoteDataSource.fetchMovies(api: api)
-        }catch ApiUrlBuilderError.inavlidUrl{
-            throw ApiUrlBuilderError.inavlidUrl
-        }catch NetworkError.responseError{
-            throw NetworkError.responseError
-        }catch NetworkError.invalideModel{
-            throw NetworkError.invalideModel
+        }catch NetworkErrors.inavlidUrl{
+            throw NetworkErrors.inavlidUrl
+        }catch NetworkErrors.responseError{
+            throw NetworkErrors.responseError
+        }catch NetworkErrors.invalideModel{
+            throw NetworkErrors.invalideModel
         }
     }
     
