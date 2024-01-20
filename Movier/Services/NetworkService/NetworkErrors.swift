@@ -11,21 +11,18 @@ enum NetworkErrors:LocalizedError{
     case invalideModel
     case invalidPath
     case inavlidUrl
-    case unKnownError
 }
 extension NetworkErrors{
     var errorDescription: String?{
         switch self {
-        case .inavlidUrl: Constants.INVALID_URL
+        case .inavlidUrl: 
+            Constants.INVALID_URL
         case .invalidPath:
             Constants.INVALID_URL
         case .invalideModel:
             Constants.INVALID_MODEL
         case .responseError:
             Constants.INVALID_RESPONSE
-        case.unKnownError:
-            Constants.UNKNOW_ERROR
-            
         }
     }
 }
