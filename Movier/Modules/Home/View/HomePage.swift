@@ -17,6 +17,7 @@ struct HomePage: View {
                 sorting
                 moviesGrid
             }.preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+            .accentColor(.white)
     }
 }
 
