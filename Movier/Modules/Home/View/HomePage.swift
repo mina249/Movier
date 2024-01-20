@@ -12,7 +12,6 @@ struct HomePage: View {
     @StateObject var coOrdinator = CoOrdinator()
     @State private var networkMonitor = NetworkManager()
     var body: some View {
-        if networkMonitor.isConnected{
             NavigationStack{
                 LazyVStack(alignment: .leading){
                     Text("Welcome To Movier")
@@ -60,18 +59,6 @@ struct HomePage: View {
                 .accentColor(.white)
                 .preferredColorScheme(.dark)
             }
-        }else{
-            VStack{
-                NoNetwork()
-                Button("retry"){                    
-                        networkMonitor.stopMonitoring()
-                        networkMonitor.startMonitoring()
-                        print(networkMonitor.isConnected)
-                    }
-                
-            }
-            
-        }
     }
 }
 
