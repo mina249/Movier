@@ -13,11 +13,11 @@ struct ApiUrlBuilder{
     
     static func build(api:ApiUrlConstructor) throws -> URL{
         guard var urlComponents = URLComponents(string: api.fullPath())else{
-            throw ApiUrlBuilderError.invalidPath
+            throw NetworkErrors.invalidPath
         }
         urlComponents.queryItems = buildParameters(api.params,["api_key": apiKey])
         guard let apiUrl = urlComponents.url else{
-            throw ApiUrlBuilderError.inavlidUrl
+            throw NetworkErrors.inavlidUrl
         }
         print(apiUrl)
         return apiUrl
@@ -30,7 +30,4 @@ struct ApiUrlBuilder{
     }
     
 }
-enum ApiUrlBuilderError:Error{
-    case invalidPath
-    case inavlidUrl
-}
+

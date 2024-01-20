@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct MovierApp: App {
-    
-
+    init(){
+        UINavigationBar().topItem?.leftBarButtonItem?.tintColor = .white
+    }
     var body: some Scene {
         WindowGroup {
-            HomePage()
+            CoOrdinatorView()
                 
         }
     }

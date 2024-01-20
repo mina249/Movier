@@ -15,14 +15,14 @@ actor RemoteDataSource : DataSource {
             let movieUrl =  try ApiUrlBuilder.build(api: api)
             let (moviesData , response) = try await URLSession.shared.data(from: movieUrl)
             guard let response = response as? HTTPURLResponse , response.statusCode == 200 else {
-                throw NetworkError.responseError
+                throw NetworkErrors.responseError
             }
             return try decodeData(responseData.self ,moviesData)
             
-        }catch ApiUrlBuilderError.inavlidUrl{
-            throw ApiUrlBuilderError.inavlidUrl
-        }catch NetworkError.invalideModel{
-            throw NetworkError.invalideModel
+        }catch NetworkErrors.inavlidUrl{
+            throw NetworkErrors.inavlidUrl
+        }catch NetworkErrors.invalideModel{
+            throw NetworkErrors.invalideModel
         }
         
     }
@@ -30,11 +30,8 @@ actor RemoteDataSource : DataSource {
         do{
             return try JSONDecoder().decode(T.self,from: moviesData)
         }catch{
-            throw NetworkError.invalideModel
+            throw NetworkErrors.invalideModel
         }
     }
 }
-enum NetworkError:Error{
-    case responseError
-    case invalideModel
-}
+
