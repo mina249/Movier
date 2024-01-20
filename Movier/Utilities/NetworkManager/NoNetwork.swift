@@ -9,7 +9,13 @@ import SwiftUI
 
 struct NoNetwork: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ContentUnavailableView(
+                    "No Internet Connection",
+                    systemImage: "wifi.exclamationmark",
+                    description: Text("Please check your connection and try again.")
+                   
+                    
+        ).tint(Color.white)
     }
 }
 
