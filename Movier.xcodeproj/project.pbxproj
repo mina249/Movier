@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A014CE12B5C18960021AC46 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A014CE02B5C18960021AC46 /* NetworkManager.swift */; };
+		8A014CE12B5C18960021AC46 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A014CE02B5C18960021AC46 /* NetworkMonitor.swift */; };
 		8A014CE32B5C19EC0021AC46 /* NoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A014CE22B5C19EC0021AC46 /* NoNetwork.swift */; };
 		8A014CE62B5C320A0021AC46 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A014CE52B5C320A0021AC46 /* SplashScreen.swift */; };
 		8A58AC092B56E858002ABF17 /* MovierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC082B56E858002ABF17 /* MovierApp.swift */; };
@@ -49,7 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A014CE02B5C18960021AC46 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8A014CE02B5C18960021AC46 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		8A014CE22B5C19EC0021AC46 /* NoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetwork.swift; sourceTree = "<group>"; };
 		8A014CE52B5C320A0021AC46 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		8A58AC052B56E858002ABF17 /* Movier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movier.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,13 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A014CDF2B5C187A0021AC46 /* NetworkManager */ = {
+		8A014CDF2B5C187A0021AC46 /* NetworkMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				8A014CE02B5C18960021AC46 /* NetworkManager.swift */,
+				8A014CE02B5C18960021AC46 /* NetworkMonitor.swift */,
 				8A014CE22B5C19EC0021AC46 /* NoNetwork.swift */,
 			);
-			path = NetworkManager;
+			path = NetworkMonitor;
 			sourceTree = "<group>";
 		};
 		8A014CE42B5C31E10021AC46 /* SplashScreen */ = {
@@ -284,7 +284,7 @@
 		8A58AC352B56F83D002ABF17 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				8A014CDF2B5C187A0021AC46 /* NetworkManager */,
+				8A014CDF2B5C187A0021AC46 /* NetworkMonitor */,
 				8A6328C02B58AF32000FCF9D /* Extensions */,
 				8A58AC362B56F98E002ABF17 /* Constants.swift */,
 				8A6328C32B58AFEA000FCF9D /* DeveloperPreview.swift */,
@@ -483,7 +483,7 @@
 				8AACABC92B5AFC2D0064CDF5 /* ImageType.swift in Sources */,
 				8A58AC452B572D3E002ABF17 /* ApiUrlBuilder.swift in Sources */,
 				8A58AC2A2B56F373002ABF17 /* HomeViewModel.swift in Sources */,
-				8A014CE12B5C18960021AC46 /* NetworkManager.swift in Sources */,
+				8A014CE12B5C18960021AC46 /* NetworkMonitor.swift in Sources */,
 				8AACABCB2B5B00180064CDF5 /* RatingView.swift in Sources */,
 				8A8DEAC72B59848A003F9F5A /* SortingCard.swift in Sources */,
 				8A58AC422B572680002ABF17 /* ApiUrlConstructor.swift in Sources */,

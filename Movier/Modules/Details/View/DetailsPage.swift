@@ -58,12 +58,12 @@ extension DetailsPage{
 extension DetailsPage{
     var header:some View{
         VStack(alignment:.leading){
-            //Image("backIcon")
             ZStack(){
                 MovieImage(imageUrl:detailsVM.getMoviePosterUrl(imageSize: .original, detailsVM.selectedMovie?.imagePath ?? ""), imageType: .cover,movie: detailsVM.selectedMovie ?? DeveloperPreview.shared.movie)
+                    .padding(.leading,10)
                 
                 MovieImage(imageUrl: detailsVM.getMoviePosterUrl(imageSize: .w185, detailsVM.selectedMovie?.moviePoster ?? ""),imageType: .poster,movie: detailsVM.selectedMovie ?? DeveloperPreview.shared.movie)
-                    .padding(.leading,15)
+                    .padding(.leading,20)
                     .padding(.trailing)
                     .offset(x:headrXOffeset,y:headerYOffset)
             }
@@ -73,8 +73,7 @@ extension DetailsPage{
                     .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                     .padding(.leading)
-                    //.truncationMode(/*@START_MENU_TOKEN@*/.tail/*@END_MENU_TOKEN@*/)
-                   // .minimumScaleFactor(0.5)
+                  
                     
                     
             }
