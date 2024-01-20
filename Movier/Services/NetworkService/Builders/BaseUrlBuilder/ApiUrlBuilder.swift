@@ -19,7 +19,7 @@ struct ApiUrlBuilder{
         guard let apiUrl = urlComponents.url else{
             throw NetworkErrors.inavlidUrl
         }
-        print(apiUrl)
+        //print(apiUrl)
         return apiUrl
     }
     

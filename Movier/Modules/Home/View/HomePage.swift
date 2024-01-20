@@ -9,13 +9,17 @@ import SwiftUI
 
 struct HomePage: View {
     @StateObject var homeVM = HomeViewModel()
-    @StateObject var coOrdinator = CoOrdinator()
-    @State private var networkMonitor = NetworkMonitor()
+    @StateObject var coOrdinator = Coordinator()
+    @StateObject private var networkMonitor = NetworkMonitor()
     var body: some View {
             NavigationStack{
                 header
                 sorting
-                moviesGrid
+                if !networkMonitor.notConnected{
+                    moviesGrid
+                }else{
+                    NoNetwork()
+                }
             }.preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
             .accentColor(.white)
     }
@@ -93,5 +97,6 @@ extension HomePage{
 }
 
 #Preview {
+    
     HomePage()
 }

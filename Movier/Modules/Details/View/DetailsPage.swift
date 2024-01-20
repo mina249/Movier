@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailsPage: View {
+    
     var detailsVM = DetailsViewModel()
     var body: some View {
         NavigationView{
