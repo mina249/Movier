@@ -17,12 +17,15 @@ class NetworkMonitor:ObservableObject{
             DispatchQueue.main.async{
                 self.notConnected = path.status == .unsatisfied
             }
+            
         }
     }
     func startMonitoring(){
         monitor.start(queue: networkQueue)
+        
     }
     func stopMonitoring(){
         monitor.cancel()
     }
+    
 }

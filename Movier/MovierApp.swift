@@ -11,7 +11,7 @@ import SwiftUI
 struct MovierApp: App {
     var body: some Scene {
         WindowGroup {
-            CoOrdinatorView()
+            CoordinatorView()
                 
         }
     }

@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct CoOrdinatorView: View {
-        @StateObject var coOrdinator = CoOrdinator()
+struct CoordinatorView: View {
+        @StateObject var coOrdinator = Coordinator()
         @State private var isSplashScreenresented = true
     var body: some View {
         
@@ -29,5 +29,5 @@ struct CoOrdinatorView: View {
 }
 
 #Preview {
-    CoOrdinatorView()
+    CoordinatorView()
 }

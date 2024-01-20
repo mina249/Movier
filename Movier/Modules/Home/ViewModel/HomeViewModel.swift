@@ -11,7 +11,7 @@ class HomeViewModel:ObservableObject{
     @Published var selectedSortType = EndPoint.popular
     @Published var hasError = false
     @Published var networkError :NetworkErrors?
-    
+
     
 
     var pageNumber:Int = 0
@@ -23,7 +23,6 @@ class HomeViewModel:ObservableObject{
             do{
                 let moveiesResponse:MovieResponse = try await homeRepository.getHomeMovies(api: api)
                     movies.append(contentsOf: moveiesResponse.movies)
-                    //maxPagenumber = moveiesResponse.totalPages
             }catch let error{
                 hasError = true
                 networkError = error as? NetworkErrors
@@ -65,4 +64,6 @@ class HomeViewModel:ObservableObject{
         detailsVm.selectedMovie = movie
         return detailsVm
     }
+    
+    
 }

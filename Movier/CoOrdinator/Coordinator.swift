@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
-class CoOrdinator:ObservableObject{
+class Coordinator:ObservableObject{
     @Published var path = NavigationPath()
-    @Published var deatilsVM:DetailsViewModel = DetailsViewModel()
+    @Published var deatilsVM:DetailsViewModel?
     
     func pushDetailsPage(_ detailsVM:DetailsViewModel){
         self.deatilsVM = detailsVM
