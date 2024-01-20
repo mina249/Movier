@@ -24,4 +24,12 @@ class DetailsViewModel:ObservableObject{
         }
         return URL(string: "")!
     }
+    
+    func getReleaseDate()->String{
+         Constants.formateReleaseDate(selectedMovie?.releaseDate ?? "2023-12-1")
+    }
+    
+    func getMovieRating()->String{
+        Constants.formateRating(selectedMovie?.rating ?? 9.999)
+    }
 }

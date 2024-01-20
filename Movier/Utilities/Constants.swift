@@ -17,4 +17,20 @@ class Constants{
     static let UNKNOW_ERROR = "Somethng went wrong plaese try again later"
     static let ERROR = "ERROR"
     
+   static func formateReleaseDate(_ date:String) -> String{
+       let dateParts = date.split(separator: "-")
+        var formatedDate = ""
+        for index in (0..<dateParts.count).reversed(){
+            let cuurent = dateParts[index]
+            formatedDate.append(cuurent + "-")
+        }
+        formatedDate.removeLast()
+        return formatedDate
+    }
+    
+    static func formateRating(_ rating:Double)->String{
+        let formatedRate = String(format: "%.1f", rating)
+        return  formatedRate
+    }
+    
 }
