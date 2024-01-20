@@ -7,15 +7,15 @@
 
 import Foundation
 import Network
-class NetworkManager:ObservableObject{
+class NetworkMonitor:ObservableObject{
     let monitor = NWPathMonitor()
     let networkQueue  =  DispatchQueue(label:"Network")
-    @Published var isConnected = true
+    @Published var notConnected = false
     
     init(isConnected: Bool = true) {
         monitor.pathUpdateHandler = { path in
             DispatchQueue.main.async{
-                self.isConnected = path.status == .satisfied
+                self.notConnected = path.status == .unsatisfied
             }
         }
     }
