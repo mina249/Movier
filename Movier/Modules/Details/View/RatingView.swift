@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RatingView: View {
-    var rating:Double
+    var rating:String
     var body: some View {
         ZStack {
             Circle()
@@ -17,7 +17,7 @@ struct RatingView: View {
                 .frame(width: 70, height: 70)
                 .rotationEffect(.degrees(-90))
             
-            Text(ratingString)
+            Text(rating)
                 .font(.headline)
                 .foregroundColor(.white)
                 Image(systemName: "star.fill")
@@ -35,12 +35,9 @@ struct RatingView: View {
 }
 
 
-extension RatingView{
-    var ratingString:String{
-        return String(rating)
-    }
+
     
     #Preview {
-        RatingView(rating: 5.8)
+        RatingView(rating: "5.8")
     }
-}
+

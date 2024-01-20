@@ -13,13 +13,13 @@ struct DetailsPage: View {
         NavigationView{
             VStack(alignment: .leading){
                 header
-                RatingView(rating: detailsVM.selectedMovie?.rating ?? 0.0)
+                RatingView(rating: detailsVM.getMovieRating())
                     .padding(EdgeInsets(top:ratingTopPadding , leading: ratingLeadingPading, bottom: 0, trailing: 0))
                 VStack{
                     HStack{
                         Image("calenderIcon")
                         Text("|")
-                        Text(detailsVM.selectedMovie?.releaseDate ?? "Unknown Title")
+                        Text(detailsVM.getReleaseDate())
                     }
                 }
                 .padding(EdgeInsets(top:dateTopPadding, leading: dateLeadingPadding , bottom: 0, trailing: 0))
