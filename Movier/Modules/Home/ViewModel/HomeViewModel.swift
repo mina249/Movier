@@ -11,14 +11,19 @@ class HomeViewModel:ObservableObject{
     @Published var selectedSortType = EndPoint.popular
     @Published var hasError = false
     @Published var networkError :NetworkErrors?
-    var pageNumber:Int32 = 0
+    
+    
+
+    var pageNumber:Int = 0
+    var maxPagenumber:Int = 6
     let homeRepository = HomeDataRepository(remoteDataSource: RemoteDataSource.shared)
    @MainActor
-    func getMovies(endPoint:EndPoint,forPage pageNumber:Int32) async {
+    func getMovies(endPoint:EndPoint,forPage pageNumber:Int) async {
             let api = ApiUrlConstructor(endPoint: selectedSortType, params: ["page":String(pageNumber)])
             do{
                 let moveiesResponse:MovieResponse = try await homeRepository.getHomeMovies(api: api)
                     movies.append(contentsOf: moveiesResponse.movies)
+                    //maxPagenumber = moveiesResponse.totalPages
             }catch let error{
                 hasError = true
                 networkError = error as? NetworkErrors
@@ -27,8 +32,10 @@ class HomeViewModel:ObservableObject{
     
     func updateMoviesListWithNextPage(){
         pageNumber += 1
-        Task{
-           await getMovies(endPoint: selectedSortType, forPage: pageNumber)
+        if(pageNumber <= maxPagenumber){
+            Task{
+                await getMovies(endPoint: selectedSortType, forPage: pageNumber)
+            }
         }
     }
     
@@ -51,5 +58,11 @@ class HomeViewModel:ObservableObject{
     }
     func isLastMovie(_ movie:Movie)->Bool{
         movie.id == movies.last?.id
+    }
+    
+    func BuildDeatailsViewModel(with movie:Movie)-> DetailsViewModel{
+        let detailsVm = DetailsViewModel()
+        detailsVm.selectedMovie = movie
+        return detailsVm
     }
 }

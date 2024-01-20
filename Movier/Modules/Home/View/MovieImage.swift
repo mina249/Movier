@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MovieImage: View {
     var imageUrl:URL
-    var frameWidth:CGFloat
-    var framHeight:CGFloat
+    var imageType:ImageType
+    var movie:Movie
     
     var body: some View {
         
@@ -21,6 +21,7 @@ struct MovieImage: View {
         }placeholder: {
             ZStack{
                 ImageGridShimmer(frameWidth: frameWidth, framHeight: framHeight, cornerRadius: 16)
+                Text(movie.originalTitle)
             }
         }
         .frame(width: frameWidth,height: framHeight)
@@ -28,7 +29,25 @@ struct MovieImage: View {
     }
     
 }
+extension MovieImage{
+    var frameWidth:CGFloat{
+        switch imageType{
+        case .poster:
+            return screenWidth * imageType.widthPercent
+        case.cover:
+            return screenWidth  * imageType.widthPercent
+        }
+    }
+    var framHeight:CGFloat{
+        switch imageType{
+        case .poster:
+            return screenHeight * imageType.heightPercent
+        case.cover:
+            return screenHeight  * imageType.heightPercent
+        }
+    }
+}
 
 #Preview {
-    MovieImage(imageUrl: DeveloperPreview.shared.url!,frameWidth: 150.0,framHeight: 150.0)
+    MovieImage(imageUrl: DeveloperPreview.shared.url!,imageType:.poster,movie: DeveloperPreview.shared.movie)
 }

@@ -11,17 +11,10 @@ struct MovieCard: View {
     let movie:Movie
     let imageUrl:URL
     var body: some View {
-        MovieImage(imageUrl: imageUrl, frameWidth: imageWidth, framHeight: ImageHeight)
+        MovieImage(imageUrl: imageUrl,imageType:.poster,movie:movie)
     }
 }
-extension MovieCard{
-    var imageWidth:CGFloat{
-        screenWidth * Constants.MOVIE_CARD_WIDHT_PRECENT
-    }
-    var ImageHeight:CGFloat{
-        screenHeight * Constants.MOVEI_CARD_HEIGHT_PERCENT
-    }
-}
+
 
 #Preview {
     MovieCard(movie: DeveloperPreview.shared.movie, imageUrl: DeveloperPreview.shared.url!)

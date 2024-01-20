@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A014CE12B5C18960021AC46 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A014CE02B5C18960021AC46 /* NetworkManager.swift */; };
+		8A014CE32B5C19EC0021AC46 /* NoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A014CE22B5C19EC0021AC46 /* NoNetwork.swift */; };
+		8A014CE62B5C320A0021AC46 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A014CE52B5C320A0021AC46 /* SplashScreen.swift */; };
 		8A58AC092B56E858002ABF17 /* MovierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC082B56E858002ABF17 /* MovierApp.swift */; };
-		8A58AC0D2B56E859002ABF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A58AC0C2B56E859002ABF17 /* Assets.xcassets */; };
 		8A58AC102B56E859002ABF17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A58AC0F2B56E859002ABF17 /* Preview Assets.xcassets */; };
 		8A58AC152B56E859002ABF17 /* Movier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC132B56E859002ABF17 /* Movier.xcdatamodeld */; };
 		8A58AC1C2B56EEE4002ABF17 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC1B2B56EEE4002ABF17 /* HomePage.swift */; };
@@ -27,7 +29,7 @@
 		8A58AC4C2B5741DB002ABF17 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58AC4B2B5741DB002ABF17 /* MovieResponse.swift */; };
 		8A6328AA2B587304000FCF9D /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6328A92B587304000FCF9D /* HomeRepository.swift */; };
 		8A6328AC2B5877C6000FCF9D /* HomeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6328AB2B5877C6000FCF9D /* HomeDataRepository.swift */; };
-		8A6328B62B58A45E000FCF9D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6328B52B58A45E000FCF9D /* Colors.xcassets */; };
+		8A6328B62B58A45E000FCF9D /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6328B52B58A45E000FCF9D /* assets.xcassets */; };
 		8A6328B92B58AA43000FCF9D /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6328B82B58AA43000FCF9D /* ImageSize.swift */; };
 		8A6328BB2B58AB43000FCF9D /* ImageUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6328BA2B58AB43000FCF9D /* ImageUrlBuilder.swift */; };
 		8A6328BD2B58AE96000FCF9D /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6328BC2B58AE96000FCF9D /* MovieCard.swift */; };
@@ -39,12 +41,19 @@
 		8A8DEAC72B59848A003F9F5A /* SortingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DEAC62B59848A003F9F5A /* SortingCard.swift */; };
 		8A8DEACB2B59A6D2003F9F5A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DEACA2B59A6D2003F9F5A /* Colors.swift */; };
 		8AACABC52B5A9D6F0064CDF5 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACABC42B5A9D6F0064CDF5 /* NetworkErrors.swift */; };
+		8AACABC92B5AFC2D0064CDF5 /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACABC82B5AFC2D0064CDF5 /* ImageType.swift */; };
+		8AACABCB2B5B00180064CDF5 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACABCA2B5B00180064CDF5 /* RatingView.swift */; };
+		8AACABD12B5B0DC40064CDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AACABD02B5B0DC40064CDF5 /* Assets.xcassets */; };
+		8AACABEE2B5B3D130064CDF5 /* CoOrdinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACABED2B5B3D130064CDF5 /* CoOrdinator.swift */; };
+		8AACABF02B5B41270064CDF5 /* CoOrdinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACABEF2B5B41270064CDF5 /* CoOrdinatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A014CE02B5C18960021AC46 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8A014CE22B5C19EC0021AC46 /* NoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetwork.swift; sourceTree = "<group>"; };
+		8A014CE52B5C320A0021AC46 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		8A58AC052B56E858002ABF17 /* Movier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A58AC082B56E858002ABF17 /* MovierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovierApp.swift; sourceTree = "<group>"; };
-		8A58AC0C2B56E859002ABF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A58AC0F2B56E859002ABF17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A58AC142B56E859002ABF17 /* Movier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movier.xcdatamodel; sourceTree = "<group>"; };
 		8A58AC1B2B56EEE4002ABF17 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -65,7 +74,7 @@
 		8A58AC4B2B5741DB002ABF17 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		8A6328A92B587304000FCF9D /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		8A6328AB2B5877C6000FCF9D /* HomeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataRepository.swift; sourceTree = "<group>"; };
-		8A6328B52B58A45E000FCF9D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8A6328B52B58A45E000FCF9D /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		8A6328B82B58AA43000FCF9D /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
 		8A6328BA2B58AB43000FCF9D /* ImageUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlBuilder.swift; sourceTree = "<group>"; };
 		8A6328BC2B58AE96000FCF9D /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
@@ -77,6 +86,11 @@
 		8A8DEAC62B59848A003F9F5A /* SortingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingCard.swift; sourceTree = "<group>"; };
 		8A8DEACA2B59A6D2003F9F5A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8AACABC42B5A9D6F0064CDF5 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		8AACABC82B5AFC2D0064CDF5 /* ImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageType.swift; sourceTree = "<group>"; };
+		8AACABCA2B5B00180064CDF5 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		8AACABD02B5B0DC40064CDF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AACABED2B5B3D130064CDF5 /* CoOrdinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoOrdinator.swift; sourceTree = "<group>"; };
+		8AACABEF2B5B41270064CDF5 /* CoOrdinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoOrdinatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A014CDF2B5C187A0021AC46 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8A014CE02B5C18960021AC46 /* NetworkManager.swift */,
+				8A014CE22B5C19EC0021AC46 /* NoNetwork.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		8A014CE42B5C31E10021AC46 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8A014CE52B5C320A0021AC46 /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 		8A58ABFC2B56E858002ABF17 = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +140,12 @@
 		8A58AC072B56E858002ABF17 /* Movier */ = {
 			isa = PBXGroup;
 			children = (
-				8A58AC382B571128002ABF17 /* KeysAndUrls */,
+				8AACABEC2B5B3CEE0064CDF5 /* CoOrdinator */,
 				8A58AC1E2B56F284002ABF17 /* Modules */,
 				8A58AC2B2B56F394002ABF17 /* Services */,
-				8A58AC332B56F7AA002ABF17 /* Assets */,
 				8A58AC352B56F83D002ABF17 /* Utilities */,
+				8A58AC382B571128002ABF17 /* KeysAndUrls */,
+				8A58AC332B56F7AA002ABF17 /* Assets */,
 				8A58AC082B56E858002ABF17 /* MovierApp.swift */,
 				8A58AC132B56E859002ABF17 /* Movier.xcdatamodeld */,
 				8A58AC3A2B571A05002ABF17 /* Info.plist */,
@@ -133,6 +165,7 @@
 		8A58AC1E2B56F284002ABF17 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8A014CE42B5C31E10021AC46 /* SplashScreen */,
 				8A58AC462B573F7C002ABF17 /* Model */,
 				8A58AC222B56F304002ABF17 /* Details */,
 				8A58AC1F2B56F2A9002ABF17 /* Home */,
@@ -183,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				8A58AC272B56F358002ABF17 /* DetailsPage.swift */,
+				8AACABCA2B5B00180064CDF5 /* RatingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,7 +276,7 @@
 		8A58AC342B56F7B6002ABF17 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8A58AC0C2B56E859002ABF17 /* Assets.xcassets */,
+				8AACABD02B5B0DC40064CDF5 /* Assets.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -250,6 +284,7 @@
 		8A58AC352B56F83D002ABF17 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8A014CDF2B5C187A0021AC46 /* NetworkManager */,
 				8A6328C02B58AF32000FCF9D /* Extensions */,
 				8A58AC362B56F98E002ABF17 /* Constants.swift */,
 				8A6328C32B58AFEA000FCF9D /* DeveloperPreview.swift */,
@@ -307,7 +342,7 @@
 		8A6328B42B58A44A000FCF9D /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				8A6328B52B58A45E000FCF9D /* Colors.xcassets */,
+				8A6328B52B58A45E000FCF9D /* assets.xcassets */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -327,8 +362,18 @@
 			children = (
 				8A6328C72B58C49D000FCF9D /* View.swift */,
 				8A8DEACA2B59A6D2003F9F5A /* Colors.swift */,
+				8AACABC82B5AFC2D0064CDF5 /* ImageType.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8AACABEC2B5B3CEE0064CDF5 /* CoOrdinator */ = {
+			isa = PBXGroup;
+			children = (
+				8AACABED2B5B3D130064CDF5 /* CoOrdinator.swift */,
+				8AACABEF2B5B41270064CDF5 /* CoOrdinatorView.swift */,
+			);
+			path = CoOrdinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,9 +435,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A6328B62B58A45E000FCF9D /* Colors.xcassets in Resources */,
+				8A6328B62B58A45E000FCF9D /* assets.xcassets in Resources */,
+				8AACABD12B5B0DC40064CDF5 /* Assets.xcassets in Resources */,
 				8A58AC102B56E859002ABF17 /* Preview Assets.xcassets in Resources */,
-				8A58AC0D2B56E859002ABF17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A014CE62B5C320A0021AC46 /* SplashScreen.swift in Sources */,
 				8A6328BF2B58AEAC000FCF9D /* MovieImage.swift in Sources */,
 				8A6328CA2B58D61F000FCF9D /* ImageGridShimmer.swift in Sources */,
 				8A58AC482B573F90002ABF17 /* Movie.swift in Sources */,
@@ -434,13 +480,17 @@
 				8A58AC282B56F358002ABF17 /* DetailsPage.swift in Sources */,
 				8A58AC2F2B56F65A002ABF17 /* RemoteDataSource.swift in Sources */,
 				8A58AC3E2B571CD5002ABF17 /* EndPoint.swift in Sources */,
+				8AACABC92B5AFC2D0064CDF5 /* ImageType.swift in Sources */,
 				8A58AC452B572D3E002ABF17 /* ApiUrlBuilder.swift in Sources */,
 				8A58AC2A2B56F373002ABF17 /* HomeViewModel.swift in Sources */,
+				8A014CE12B5C18960021AC46 /* NetworkManager.swift in Sources */,
+				8AACABCB2B5B00180064CDF5 /* RatingView.swift in Sources */,
 				8A8DEAC72B59848A003F9F5A /* SortingCard.swift in Sources */,
 				8A58AC422B572680002ABF17 /* ApiUrlConstructor.swift in Sources */,
 				8A6328AA2B587304000FCF9D /* HomeRepository.swift in Sources */,
 				8A58AC152B56E859002ABF17 /* Movier.xcdatamodeld in Sources */,
 				8A58AC1C2B56EEE4002ABF17 /* HomePage.swift in Sources */,
+				8AACABEE2B5B3D130064CDF5 /* CoOrdinator.swift in Sources */,
 				8A58AC092B56E858002ABF17 /* MovierApp.swift in Sources */,
 				8A6328BB2B58AB43000FCF9D /* ImageUrlBuilder.swift in Sources */,
 				8A58AC4A2B5741A0002ABF17 /* OrginalLanguage.swift in Sources */,
@@ -454,6 +504,8 @@
 				8A6328AC2B5877C6000FCF9D /* HomeDataRepository.swift in Sources */,
 				8A6328C62B58BA8A000FCF9D /* ImageUrlConstructor.swift in Sources */,
 				8A6328C82B58C49D000FCF9D /* View.swift in Sources */,
+				8A014CE32B5C19EC0021AC46 /* NoNetwork.swift in Sources */,
+				8AACABF02B5B41270064CDF5 /* CoOrdinatorView.swift in Sources */,
 				8A6328B92B58AA43000FCF9D /* ImageSize.swift in Sources */,
 				8A58AC372B56F98E002ABF17 /* Constants.swift in Sources */,
 			);
@@ -588,6 +640,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Movier/Preview Content\"";
@@ -617,6 +670,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Movier/Preview Content\"";
