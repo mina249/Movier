@@ -6,7 +6,7 @@ Here're some of the project's best features:
 
 -Sorting by popular and top rated movies
 
--Details for each mvie
+-Details for each movie
 
 💻 Built with
 Technologies used in the project:
